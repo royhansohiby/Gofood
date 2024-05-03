@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Setelan from './screens/setelan';
 import Beranda from './screens/beranda';
+import Akun from './screens/Akun';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -19,6 +20,9 @@ function MyTabs() {
       )}} />
       <Tab.Screen name="Setelan" component={Setelan} options={{headerShown: false, tabBarIcon: ({color, size}) => (
         <Icon name="cog" size={size} color={color} />
+      )}}/>
+      <Tab.Screen name="Akun" component={Akun} options={{headerShown: false, tabBarIcon: ({color, size}) => (
+        <Icon name="user" size={size} color={color} />
       )}}/>
     </Tab.Navigator>
   );
