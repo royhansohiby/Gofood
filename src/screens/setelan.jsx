@@ -1,14 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const setelan = () => {
+const Setelan = () => {
   return (
-    <View>
-      <Text>setelan</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>ROIHAN SHOHIBY MAULANA</Text>
     </View>
   )
 }
 
-export default setelan
+export default Setelan
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  text: {
+    color: 'black'
+  }
+})

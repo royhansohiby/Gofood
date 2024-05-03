@@ -1,15 +1,16 @@
 
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const beranda = () => {
+const Beranda = () => {
   return (
     <View>
-      <Text>beranda</Text>
+      <Image source={require("../../assets/makanan.jpg")}/>
+      <Text>Beranda</Text>
     </View>
   )
 }
 
-export default beranda
+export default Beranda
 
 const styles = StyleSheet.create({})

@@ -5,18 +5,19 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import beranda from './screens/beranda'
-import setelan from './screens/setelan';
+import Setelan from './screens/setelan';
+import Beranda from './screens/beranda';
+
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Beranda" component={beranda} options={{tabBarIcon: ({color, size}) => (
+      <Tab.Screen name="Beranda" component={Beranda} options={{tabBarIcon: ({color, size}) => (
         <Icon name="home" size={size} color={color} />
       )}} />
-      <Tab.Screen name="Setelan" component={setelan} options={{tabBarIcon: ({color, size}) => (
+      <Tab.Screen name="Setelan" component={Setelan} options={{headerShown: false, tabBarIcon: ({color, size}) => (
         <Icon name="cog" size={size} color={color} />
       )}}/>
     </Tab.Navigator>
